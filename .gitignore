@@ -1,11 +1,12 @@
-# Prerequisites
-*.d
+# Prerequisites *.d
 
 # Object files
 *.o
 *.ko
 *.obj
 *.elf
+
+mmx/mmx_test
 
 # Linker output
 *.ilk
