@@ -43,3 +43,19 @@ _test_sse_max:
 
     popq %rbp
     ret
+
+.globl _test_sse_shuffle
+_test_sse_shuffle:
+    pushq %rbp
+    movq %rsp, %rbp
+
+    movaps (%rsi), %xmm0
+    movaps (%rdi), %xmm1
+
+    shufps $0x1b, %xmm1, %xmm0
+    movaps %xmm0, (%rdx)
+
+    xorq %rax, %rax
+
+    popq %rbp
+    ret
