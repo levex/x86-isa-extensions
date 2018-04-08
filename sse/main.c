@@ -5,6 +5,8 @@
 
 /* Assembly functions */
 extern int is_sse_available(void);
+extern int test_sse_addition(volatile float *, volatile float *,
+            volatile float *);
 
 volatile float a[4] = {3.14f, 2.76f, 2.71f, 8.66f};
 volatile float b[4] = {3.14f, 2.12f, 2.11f, 1.22f};
