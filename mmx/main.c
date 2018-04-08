@@ -12,7 +12,7 @@ do_examples(void)
 {
     int result;
 
-    printf("     Testing vector addition... ");
+    printf("     Testing MMX1 vector addition... ");
     result = do_vector_addition(0x11 << 24 | 0x22 << 16 | 0x33 << 8 | 0x44, 
                                 0x00 << 24 | 0x17 << 16 | 0x55 << 8 | 0x11);
     printf("0x%x ", result);
